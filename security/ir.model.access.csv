@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_phone_items,access.phone.items,model_phone_items,,1,1,1,1
+access_phone_packs,access.phone.packs,model_phone_packs,,1,1,1,1
+access_phone_voucher,access.phone.voucher,model_phone_voucher,,1,1,1,1
+access_phone_point,access.phone.point,model_phone_point,,1,1,1,1
+access_phone_order,access.phone.order,model_phone_order,,1,1,1,1
+access_phone_cancel,access.phone.cancel,model_phone_cancel,,1,1,1,1
