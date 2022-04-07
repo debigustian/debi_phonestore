@@ -9,7 +9,7 @@
 
 #     @http.route('/phone_store/phone_store/objects/', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('electron_house.listing', {
+#         return http.request.render('phone_store.listing', {
 #             'root': '/phone_store/phone_store',
 #             'objects': http.request.env['phone_store.phone_store'].search([]),
 #         })

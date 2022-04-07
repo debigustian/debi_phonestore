@@ -82,7 +82,7 @@
         <record id="order_action" model="ir.actions.act_window">
             <field name="name">Order</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">electron.order</field>
+            <field name="res_model">phone.order</field>
             <field name="view_mode">tree,form</field>
         </record>
 

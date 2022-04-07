@@ -7,4 +7,4 @@ class CancelOrder(models.TransientModel):
     notes = fields.Text(string='Reason')
 
     def action_cancel(self):
-        self.env['electron.order'].browse(self.env.context['active_id']).update({'notes':self.notes, 'state':'cancelled'})
+        self.env['phone.order'].browse(self.env.context['active_id']).update({'notes':self.notes, 'state':'cancelled'})

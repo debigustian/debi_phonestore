@@ -23,7 +23,7 @@ class Order(models.Model):
     @api.onchange('customer')
     def onchange_point_customer(self):
         for record in self:
-            record.point_customer = record.env['electron.point'].search([('customer.id','=', record.customer.id)]).point
+            record.point_customer = record.env['phone.point'].search([('customer.id','=', record.customer.id)]).point
 
     date_created = fields.Datetime(
         string='Date Created',
