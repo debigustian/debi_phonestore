@@ -69,17 +69,17 @@ class Order(models.Model):
         comodel_name='phone.packs', 
         string='Packs',)
 
-    total_items = fields.Integer(compute='_compute_total', string='Total Items', store=True)
+    total_items = fields.Integer(phone='_phone_total', string='Total Items', store=True)
 
     @api.depends('items_ids')
-    def _compute_total(self):
+    def _phone_total(self):
         for record in self:
             self.total_items = sum(self.items_ids.mapped('price'))
 
-    total_packs = fields.Integer(compute='_phone_total', string='Total Packs', store=True)
+    total_packs = fields.Integer(phone='_phone_total', string='Total Packs', store=True)
 
     @api.depends('packs_ids')
-    def _compute_total(self):
+    def _phone_total(self):
         for record in self:
             self.total_packs = sum(self.packs_ids.mapped('total'))
 
